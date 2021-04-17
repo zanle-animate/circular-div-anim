@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 600px;
+  height: 600px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  z-index: 100;
+}
+
+/* ================= animated span========== */
+span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 90%;
+  height: 90%;
+  border: 2px solid #1c1c1c;
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  animation: animate 6s linear infinite;
+}
+span:hover:nth-child(1) {
+  background: #000;
+  color: white;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* ================= animated span========== */
+span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 90%;
+  height: 90%;
+  border: 2px solid #1c1c1c;
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  animation: animate 3s linear infinite;
+}
+span:hover:nth-child(2) {
+  background: #000;
+  color: white;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* ================= animated span========== */
+span:nth-child(3) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 90%;
+  height: 90%;
+  border: 2px solid #1c1c1c;
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  animation: animate 9s linear infinite;
+}
+span:hover:nth-child(3) {
+  background: #000;
+  color: white;
+  z-index: 100;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
